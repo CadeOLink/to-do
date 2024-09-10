@@ -1,5 +1,5 @@
-import { Col, Button, Row } from "react-bootstrap"
-import { Route, useNavigate } from "react-router-dom"
+import { Button, Row } from "react-bootstrap"
+import {  useNavigate } from "react-router-dom"
 
 function ButtonCreate(){
    
@@ -11,7 +11,7 @@ function ButtonCreate(){
 
    return(
       <Row md={4} className="justify-content-md-center">
-      <Button onClick={changeRouter}>Create new to-do</Button>
+      <Button onClick={() => {changeRouter()}}>Create new to-do</Button>
       </Row>
    )
 }

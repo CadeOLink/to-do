@@ -1,4 +1,4 @@
-import { Container, Row, Col, Image, Button} from "react-bootstrap"
+import { Row, Col, Image, Button} from "react-bootstrap"
 
 function Header(){
 
