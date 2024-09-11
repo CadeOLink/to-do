@@ -1,10 +1,14 @@
-import { Container, Row, Col, Image, Button} from "react-bootstrap"
+import { useContext } from "react"
+import { Row, Col, Button} from "react-bootstrap"
+import { Context } from "../Context/Context"
 
 function ToDoCard(props){
+   const { Reload, setReload} = useContext(Context)
    function deleteToDo(){
       var local = JSON.parse(localStorage.getItem(`ToDos`))
       local = local.filter(storage => storage.Id !== props.ID)
       localStorage.setItem(`ToDos`, JSON.stringify(local))
+      setReload(!false)
    }
    function addFavorite(){
       var local = JSON.parse(localStorage.getItem(`ToDos`))
