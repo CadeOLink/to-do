@@ -1,7 +1,7 @@
-import { Button, Row } from "react-bootstrap"
-import {  useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
-function ButtonCreate(){
+
+export default ButtonCreate => {
    
    const navigate = useNavigate();
 
@@ -10,10 +10,8 @@ function ButtonCreate(){
    }
 
    return(
-      <Row md={4} className="justify-content-md-center">
-      <Button onClick={() => {changeRouter()}}>Create new to-do</Button>
-      </Row>
+      <>
+      <button className="btn-create" onClick={() => {changeRouter()}}>Create new to-do</button>
+      </>
    )
 }
-
-export default ButtonCreate

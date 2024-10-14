@@ -1,0 +1,116 @@
+:root{
+   --color-white: white;
+   --color-black: black;
+   --color-bg-main: #1E1E1E;
+   --color-bg-header: #760E63;
+   --color-bg-todo: #D9D9D9;
+   --color-bg-header-hover: #610c51;
+   --color-bg-todo-hover: #adadad;
+}
+
+html{
+   background-color: var(--color-bg-main);
+   display: flex;
+   place-content: center;
+   font-family: 'Roboto';
+   font-weight: 400;
+}
+#root{
+   background-color: var(--color-bg-header);
+   width: 1280px;
+   height: 200px;
+}
+hr{
+   height: 2px; 
+   background-color: var(--color-white); 
+   border: none; 
+   width: 1024px;
+
+}
+.home{
+   display: grid;
+   place-items: center;
+}
+.ToDos{
+   background-color: var(--color-bg-todo);
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   padding-inline: 2rem;
+   padding-top:0.5rem;
+   padding-bottom:0.5rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   border-radius: 2rem;
+   align-items: center;
+}
+.btn-create{
+   border: black solid 2px;
+   background-color: var(--color-bg-todo);
+   width: 200px;
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 2rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 1rem;
+   cursor: pointer;
+}
+.btn-create:hover, .btn-settodo:hover{
+   background-color: var(--color-bg-todo-hover);
+   transition: 0.3s ;
+}
+.btn-delete{
+   padding-inline: 1rem;
+   background-color:var(--color-bg-header);
+   border-radius: 2rem;
+   color: white;
+   height: 2rem;
+   cursor: pointer;
+}
+.btn-delete:hover{
+   transition: 0.3s;
+   background-color: var(--color-bg-header-hover);
+}
+.createnewtodo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.ToDo-title, .ToDo-description{
+   max-width: 400px;
+   word-wrap: break-word; 
+   overflow-wrap: break-word; 
+}
+.btn-settodo{
+   background-color: var(--color-bg-todo);
+   width: 200px;
+   height: 45px;
+   border-radius: 2rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 1rem;
+   cursor: pointer;
+}
+form{
+   color: var(--color-white);
+   font-size: 1.5rem;
+}
+textarea{
+   width: 1024px;
+   height: 8rem;
+   border-radius: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   padding-inline: 1rem;
+   color: var(--color-black);
+   font-size: 1.2rem;
+}

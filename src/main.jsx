@@ -4,6 +4,7 @@ import Home from './Routers/Home.jsx'
 import CreateNewToDo from './Routers/CreateNewToDo.jsx'
 import {  createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ContextProvider } from './Context/Context.jsx'
+import './style.css'
 
 const router = createBrowserRouter([
   {
